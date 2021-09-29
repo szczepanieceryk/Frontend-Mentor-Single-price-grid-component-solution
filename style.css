@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    font-family: "Karla", sans-serif;
+    background-color: hsl(204, 43%, 93%);
+}
+.title{
+    padding-bottom: 20px;
+}
+.single-price-component-wrapper{
+    margin: 50px 15px 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* join-our-community section */
+.join-our-community{
+    border-radius: 6px 6px 0 0;
+}
+.join-our-community,.subscription,.why-us{
+    padding: 30px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+}
+.join-our-community .title{
+    flex-basis: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    color: hsl(179, 62%, 43%);
+    letter-spacing: 1px;
+}
+.join-our-community .free{
+    padding: 0px 80px 15px 0;
+    color: hsl(71, 73%, 54%);
+}
+.join-our-community .access{
+    line-height: 1.6em;
+    color: hsl(217, 29%, 82%);
+}
+
+/* subscription section */
+.subscription{
+    letter-spacing: 1px;
+    color: #fff;
+    background-color: hsl(179, 62%, 43%);
+}
+.subscription .title{
+    flex-basis: 100%;
+}
+.subscription .price{
+    margin:0 10px 10px 0;
+    font-size: 28px;
+}
+.subscription .month{
+    line-height: 2;
+    color:hsl(179, 68%, 83%);
+}
+.subscription .access{
+    flex-basis: 100%;
+} 
+.subscription .sign-up{
+    margin: 25px auto 20px 0;
+    padding: 15px 70px;
+    flex-basis: 90%;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 3px 12px  rgba(0, 0, 0, 0.3);
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: #fff;
+    background-color:hsl(71, 73%, 54%);
+}
+
+/* why-us section */
+.why-us{
+    border-radius: 0 0px 6px 6px;
+    color: #fff;
+    background-color: hsl(179, 58%, 65%);
+}
+.why-us .tutotrials{
+    padding-right:90px;
+    line-height: 1.3em;
+    color:hsl(179, 79%, 85%);
+}
+
+/* attributions */
+.attribution{
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+}
+.attribution a{
+    text-decoration: none;
+
+}
+
+/* responsiveness media-queries (iPads,tablets) */
+@media(min-width:768px){
+    .single-price-component-wrapper{
+    margin: 100px 60px 20px;
+    }
+
+    /* join-our-community section */
+    .join-our-community,.subscription,.why-us{
+    padding: 40px 30px;
+    }
+    .join-our-community{
+    flex-basis: 100%;
+    }
+    .join-our-community .title{
+    flex-basis: 100%;
+    }
+    .join-our-community .free{
+    padding: 0 0 20px 0;
+    font-size: 20px;
+    }
+    .join-our-community .access{
+        padding-right: 100px ;
+    }    
+
+    /* subscription section */
+    .subscription,.why-us{
+    flex-basis: 50%;
+    }
+    .subscription{
+        border-radius: 0 0 0 6px;
+    }
+
+    /* why-us */
+    .why-us{
+        border-radius: 0 0 6px 0;
+    }
+}
+
+/* desktop design */
+@media(min-width:1025px){
+    .single-price-component-wrapper{
+        margin: 120px 100px 40px;
+    }
+    .join-our-community,.subscription,.why-us{
+        padding: 40px 40px;
+        }
+    .join-our-community .title{
+            padding-bottom: 30px;
+        }    
+    .why-us .title{
+    padding: 0;  
+    }
+}
+
+@media(min-width:1200px){
+    .single-price-component-wrapper{
+        margin: 150px 250px 60px;
+    }
+    .join-our-community .access{
+        padding-right: 150px ;
+    }    
+    .subscription .sign-up{
+        flex-basis: 85%;  
+    }
+}
+
+@media(min-width:1400px){
+    .single-price-component-wrapper{
+        margin: 150px 350px 60px;
+    }
+    .join-our-community .access{
+        padding-right: 180px ;
+    }    
+}
+
+@media(min-width:1600px){
+    .single-price-component-wrapper{
+        margin: 180px 400px 60px;
+    }
+    .join-our-community .access{
+        padding-right: 250px ;
+    }    
+    .why-us .tutotrials{
+        padding-right:130px;
+    }
+    .subscription .sign-up{
+        flex-basis: 70%;  
+    }
+}
+
+@media(min-width:1900px){
+    .single-price-component-wrapper{
+        margin: 200px 550px 40px;
+    }
+    .join-our-community .access{
+        padding-right: 250px ;
+    }    
+    .why-us .tutotrials{
+        padding-right:130px;
+    }
+    .subscription .sign-up{
+        flex-basis: 70%;  
+    }
+}
